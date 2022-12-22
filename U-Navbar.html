@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>drop down profile menu</title>
+	<link rel="stylesheet" href="U-Profile.css">
+</head>
+<body>
+	<div class="hero">
+		<nav>
+			<img src="logo.png" class="logo">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<img src="user.png" class="user-pic" onclick="toggMenu()">
+
+
+			<div class="sub-menu-wrap" id="subMenu">
+				<div class="sub-menu">
+					<div class="user-info">
+                         <img src="user.png">
+                         <h3>Ram krishna</h3> 
+					</div>
+					<hr>
+
+					<a href="#" class="sub-menu-link">
+						<img src="profile.png">
+						<p>Edit Profile</p>
+						<span>></span>
+					</a>
+
+					<a href="#" class="sub-menu-link">
+						<img src="setting.png">
+						<p>Settings & Privacy</p>
+						<span>></span>
+					</a>
+
+					<a href="#" class="sub-menu-link">
+						<img src="help.png">
+						<p>Help & support</p>
+						<span>></span>
+					</a>
+
+					<a href="#" class="sub-menu-link">
+						<img src="logout.png">
+						<p>Logout </p>
+						<span>></span>
+					</a>
+
+				</div>
+				
+			</div>
+
+
+		</nav>
+	</div>
+
+<script>
+
+	let subMenu= document.getElementById("subMenu");
+
+	function toggMenu() {
+		// body...
+		subMenu.classList.toggle("open-menu");
+	}
+</script>
+</body>
+
+</html>
